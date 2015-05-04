@@ -1,12 +1,50 @@
 <html>
-  <head>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.min.css"/>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/vendor/fastclick.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/vendor/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/vendor/jquery.cookie.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/vendor/modernizr.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.min.js"></script>
+
     <script src="./build/react.js"></script>
     <script src="./build/JSXTransformer.js"></script>
-  </head>
-  <body>
-    <script type="text/jsx;harmony=true" src="chat.jsx"></script>
+    <script src="./client.min.js"></script>
 
-    <div id="chat"></div>
+    <style>
+        body {
+            background: url("img/bg.png") repeat;
+        }
 
-  </body>
+        .small-centered {
+            background: white;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        h1 {
+            font-size: 26px;
+            font-weight: bold;
+            padding-bottom: 5px;
+            margin-bottom: 5px;
+        }
+
+        .panel, .panel.callout {
+            padding: 5px 10px;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+<script type="text/jsx;harmony=true" src="chat.jsx"></script>
+
+<div class="row">
+    <div class="small-5 small-centered columns">
+        <h1>CatSocket Chat</h1>
+        <div id="chat"></div>
+    </div>
+</div>
+
+</body>
 </html>
